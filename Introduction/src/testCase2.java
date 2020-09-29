@@ -12,7 +12,7 @@ public class testCase2 {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\diana.michnevic\\Desktop\\JAVA\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		// nesamone
+		// nesamone dviguba
 
 		/////////////////////////
 		/*
