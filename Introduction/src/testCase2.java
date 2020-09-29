@@ -8,20 +8,18 @@ public class testCase2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-	
-		
-		  System.setProperty("webdriver.chrome.driver",
-		  "C:\\Users\\diana.michnevic\\Desktop\\JAVA\\chromedriver_win32\\chromedriver.exe");
-		  WebDriver driver = new ChromeDriver();
-		  //blablablabla
-		 
+
+		System.setProperty("webdriver.chrome.driver",
+				"C:\\Users\\diana.michnevic\\Desktop\\JAVA\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		// blablablabla
+
 		/////////////////////////
 		/*
 		 * driver.get("http://google.com"); System.out.println(driver.getTitle());
 		 * System.out.println(driver.getCurrentUrl());
-		 * System.out.println(driver.getPageSource());
-		 * driver.get("http://yahoo.com"); driver.navigate().back(); driver.close();
-		 * driver.quit();
+		 * System.out.println(driver.getPageSource()); driver.get("http://yahoo.com");
+		 * driver.navigate().back(); driver.close(); driver.quit();
 		 */
 		/////////////////////////
 		/*
@@ -39,14 +37,14 @@ public class testCase2 {
 		 * System.out.println(driver.findElement(By.cssSelector("div#error.loginError"))
 		 * .getText());
 		 */
-		 /////////////////////////		
+		/////////////////////////
 		/*
 		 * driver.get("http://facebook.com/");
 		 * driver.findElement(By.cssSelector("#email")).sendKeys("bfhjdf");
 		 * driver.findElement(By.xpath("//*[@id='pass']")).sendKeys("fddff");
 		 * driver.findElement(By.xpath("//*[@id='u_0_c']/div[3]/a")).click();
-		 */  
-		 ///////////////////////
+		 */
+		///////////////////////
 		driver.get("http://rediff.com");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -55,4 +53,5 @@ public class testCase2 {
 		driver.findElement(By.xpath("//*[@id='login1']")).sendKeys("hello");
 		driver.findElement(By.cssSelector("input#password")).sendKeys("12346");
 		driver.findElement(By.xpath("//input[contains(@name,'proceed')]")).click();
-}}
+	}
+}
