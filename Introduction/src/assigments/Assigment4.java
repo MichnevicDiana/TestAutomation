@@ -1,10 +1,11 @@
+package assigments;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Assigment3 {
+public class Assigment4 {
 
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver",
